@@ -1,3 +1,5 @@
+package Logic;
+
 public class Strings {
    static public String  MAIN_TEXT = "Привет приятель, выбирай действие(введи номер действия):";
    static public String CHOCE_TEXT = "Ваше действие:";
@@ -15,5 +17,6 @@ public class Strings {
    static public String COENE = "ШыШка)0)0";
    static public String RINGE = "Кольцо";
    static public String BUKET= "Ведро, ВЕДРО - НЕ ШЛЕМ ";
-   static public String OLSEV = "Весло";
+   static public String OAR = "Весло";
+
 }

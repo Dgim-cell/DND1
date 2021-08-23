@@ -1,3 +1,8 @@
+package Logic;
+
+import Logic.ConsoleDialog;
+import Logic.Game;
+
 import java.util.Scanner;
 
 public class Main {

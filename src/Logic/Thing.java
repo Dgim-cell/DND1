@@ -1,3 +1,5 @@
+package Logic;
+
 public class Thing {
     private String name;
 
