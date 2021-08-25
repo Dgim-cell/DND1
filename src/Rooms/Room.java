@@ -23,7 +23,16 @@ abstract public class Room {
         this.firstInt = false;
     }
 
-    abstract public void showText(Scanner sc);
+
+    public void startRoom(Scanner sc) {
+        if (this.firstInt)
+            showDescription();
+        System.out.println(TRANSITION + name);
+        showVariants(sc);
+    }
+
+
+    abstract public void showVariants(Scanner sc);
 
     public void register(CallBack callBack){
         this.callBack = callBack;

@@ -19,7 +19,7 @@ public class Main {
         String[] items = {"Начать игру" , "Покинуть этот мир"};
         int r = ConsoleDialog.show(sc, Strings.MAIN_TEXT,items);
         if (r == 1) {
-            Game g = new Game();
+            Game g = new Game(sc);
         } else if (r == 2) {
             System.out.println(Strings.EXIT_TEXT);
             System.exit(0);

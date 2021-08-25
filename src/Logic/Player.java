@@ -37,6 +37,8 @@ public class Player {
         System.out.println("Инвентарь");
         for(int i = 0; i < things.size(); i++)
             System.out.println(i + ")" + things.get(i));
-        System.out.println();
+        if (things.size() == 0)
+            System.out.println("Здесь пуста ._.");
+
     }
 }
