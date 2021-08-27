@@ -18,7 +18,7 @@ public class Room_0 extends Room{
 
     public Room_0() {
         super(0, NAME, DESCRIPTION);
-        showDescription();
+
     }
 
 

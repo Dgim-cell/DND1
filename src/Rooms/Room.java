@@ -9,6 +9,7 @@ abstract public class Room {
     private boolean firstInt;
     public static final String TRANSITION = "Вы перешли в ";
     protected CallBack callBack;
+    protected Mainback mainback;
 
     public Room(int id, String name, String description) {
         this.id = id;
@@ -36,6 +37,10 @@ abstract public class Room {
 
     public void register(CallBack callBack){
         this.callBack = callBack;
+    }
+
+    public void register(Mainback mainback){
+        this.mainback = mainback;
     }
 
     public int getId() {

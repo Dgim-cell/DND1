@@ -11,15 +11,15 @@ public class Game implements CallBack {
     private Scanner sc;
     private boolean is_show_things;
 
-    public Game(Scanner scan){
-        rooms = new  Room[]{new Room_0(), new Room_1()};
-        for (Room room: rooms)
+    public Game(Scanner scan, mainForGame main){
+        rooms = new  Room[]{new Room_0(), new Room_1(), new Room_2(), new Room_3()};
+        for (Room room: rooms) {
             room.register(this);
+            room.register(main);
+        }
         player = new Player();
         sc = scan;
-
         STAR_GAME();
-
     }
 
     public void STAR_GAME(){
@@ -46,5 +46,10 @@ public class Game implements CallBack {
     public void showThings() {
     player.showThing();
     is_show_things = true;
+    }
+
+    @Override
+    public Player getPlayer() {
+        return player;
     }
 }
